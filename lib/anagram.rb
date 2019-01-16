@@ -1,13 +1,13 @@
 # Your code goes here!
   class Anagram
-    attr_accessor :gram
+    attr_accessor :words
 
-    def initialize(gram)
-      @gram = gram
+    def initialize(words)
+      @words = word
     end
 
-    def match(gram)
-      gram.select {|puzzle| puzzle.split(" "). sort == @gram.split(" ").sort}
+    def match(word)
+      word.select {|puzzle| puzzle.split(""). sort == @word.split("").sort}
     end
   end
   #Write method that DETECTS no matches within an array
