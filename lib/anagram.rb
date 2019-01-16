@@ -7,7 +7,7 @@
     end
 
     def match(gram)
-      gram.select {|puzzle| puzzle.split(" ").sort == @gram.split(" ").sort}
+      gram.select {|puzzle| puzzle.split("").sort == @gram.split("").sort}
     end
   end
   #Write method that DETECTS no matches within an array
