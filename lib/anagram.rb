@@ -3,11 +3,11 @@
     attr_accessor :words
 
     def initialize(words)
-      @words = word
+      @words = words
     end
 
-    def match(word)
-      word.select {|puzzle| puzzle.split(""). sort == @word.split("").sort}
+    def match(words)
+      words.select {|puzzle| puzzle.split(""). sort == @words.split("").sort}
     end
   end
   #Write method that DETECTS no matches within an array
